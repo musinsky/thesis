@@ -1,11 +1,11 @@
 * Diplomová práca (master)<br />
-[Produkcia podivných častíc v jadro-jadrových interakciách](https://github.com/musinsky/thesis/master)
+[Produkcia podivných častíc v jadro-jadrových interakciách](https://github.com/musinsky/thesis/tree/master/master)
 
 * Реферат (referat)<br />
-[Газовые координатно-трековые детекторы](https://github.com/musinsky/thesis/referat)
+[Газовые координатно-трековые детекторы](https://github.com/musinsky/thesis/tree/master/referat)
 
 * Диссертация (disser)<br />
-[Исследование зарядово-обменных процессов в дейтрон-протонных взаимодействиях](https://github.com/musinsky/thesis/disser)
+[Исследование зарядово-обменных процессов в дейтрон-протонных взаимодействиях](https://github.com/musinsky/thesis/tree/master/disser)
 
 License
 -------
