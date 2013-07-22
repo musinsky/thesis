@@ -1,0 +1,197 @@
+\chapter{Rekonštrukcia $K^{0}$ rozpadov}
+Experiment WA94 bol navrhnutý za účelom skúmania QGP, konkrétne pozorovaním
+zvýšenej produkcie podivných častíc $K^{0}, K^{\pm}, \Lambda, 
+\overline{\Lambda}, \Xi^{-}, \overline{\Xi^{-}}$. Táto práca sa zaoberá
+štúdiom produkcie $K^{0}_{S}$ mezónov. Neutrálne hadróny môžeme identifikovať 
+na základe ich rozpadov na nabité častice: \\
+\begin{center}
+$K^{0}_{S} \longrightarrow \pi^{+} + \pi^{-}$ \\
+\end{center}
+\begin{center}
+$\Lambda \longrightarrow p + \pi^{-}$. \\
+\end{center} 
+Teda znakom prítomnosti $K^{0}_{S}$ mezónu sú dve stopy opačne nabitých
+častíc, $\pi^{+}$ a $\pi^{-}$ mezónov. \\ 
+\vspace*{-5cm} \hspace*{-1cm} \input{rozpad.pic}
+
+\vspace*{-3cm}
+\begin{center}
+  Obrázok 4.1: Rozpad $K^{0}_{S}$ mezónu.
+\end{center}
+\section{Rekonštrukcia $V^{0}$}
+Ak už máme experimentálne  dáta spracované pomocou programu TRIDENT, ktorý
+rekonštruuje  dráhy nabitých častíc z jednotlivých \uv{hitov} v~danej
+komore, tak potom tieto zrekonštruované dráhy vstupujú do programu STRIPV0.
+Tento program hľadá dve opačne nabité dráhy pretínajúce sa  v~bode dostatočne
+vzdialenom od terčíka, aby nedochádzalo k~zámenam s~nabitými časticami  
+pochádzajúcimi priamo z~terčíka. Vykonáva aj určité orezania (cuts)
+na vyprodukovanie tzv. DST (data summary tape) s~$V^{0}$ kandidátmi:
+
+\begin{itemize}
+  \item{ Ak je vzdialenosť dráh dvoch opačne nabitých častíc  v~mieste ich
+najväčšieho priblíženia väčšia ako 1 cm, tak takýto pár sa 
+z~ďalšej analýzy  vylučuje. Ak nie, tak vertex $V^{0}$ je potom bod ležiaci 
+v~polovici tohto miesta.}
+  \item{X-ová súradnica vertexu $V^{0}$ leží v~intervale
+$-115cm<x_{\Omega}<71cm$. Spodná hranica tejto súradnice je taká, pretože
+akceptancia je veľmi nízka pre $V^{0}$ rozpadajúce sa ďaleko od MWPC. Horná
+hranica je daná polohou prvej komory A1.}
+  \item{Tak isto sa vyžaduje, aby priečna zložka hybností rozpadajúcich
+sa dráh vzhľadom k~smeru pohybu $V^{0}$, $q_{T}$ bola menšia ako $0.3\:
+GeV/c$. Skutočné $V^{0}$ majú $q_{T}<0.2\: GeV/c$.}
+  \item{Celková hybnosť $V^{0}$ musí byť väčšia ako 6.5 GeV/c, čo je
+minimálna hybnosť pre takéto rozpady, aby boli merateľné v~Omega A~komorách.
+Typické hodnoty hybností $K^{0}$ registrovaných v~komorách sú okolo 15
+GeV/c.}
+  \item{Rozpadové produkty musia preletieť všetkými siedmimi MWPC a na
+rekonštrukciu dráhy sa použili aspoň štyri priestorové body.}
+\end{itemize}
+\section{Identifikácia $K^{0}$ mezónov}  
+Obr. 4.1 znázorňuje $K^{0}$ rozpad, základné 
+geometrické parametre pre rozpad: vzdialenosť  najmenšieho priblíženia dvoch
+rozpadajúcich dráh $d$, pozíciu vrcholu a impakt parameter, o~ktorom
+pojednám neskôr.
+
+Vrchol rozpadu $K^{0}$ by sa mal nachádzať v~intervale 
+$-100cm<x_{\Omega}<71cm$. Pre uistenie, že $K^{0}$ pochádza 
+z~terčíka, musí byť  uhol $\vartheta$ medzi priamkou určenou polohou $V^{0}$
+a terčíkom a vektorom hybností menší ako $0.75^{\circ}$.
+
+Vhodným nástrojom  na identifikáciu častíc sa ukázal  graf
+Armenterosa--Podo\-lanského.
+\input{alfa.tex}
+%  Tri zložky hybnosti rozpadových
+% produktov $V^{0}$ prepočítame na priečne $q_{T}$ a pozdĺžne $q_{L}$ zložky
+% vzhľadom k~smeru letu $V^{0}$. Pozdĺžne zložky kladných rozpadových produktov
+% označíme $q_{L}^{+}$ a záporných produktov $q_{L}^{-}$. Zadefinujeme veličinu
+% $\alpha$ ako: 
+% 
+% \begin{center}
+%   $\alpha=\frac{q_{L}^{+}-q_{L}^{-}}{q_{L}^{+}+q_{L}^{-}}$
+% \end{center}
+% 
+% Na grafe závislosti $\alpha$ od $q_{T}$ vidíme kinematicky povolené oblasti 
+% $V^{0}$ v~tvare elipsy. Elipsa pre $K^{0}$ prekrýva elipsu pre $\Lambda$ a
+% $\overline{\Lambda}$. Graf na obr. 3.2 nám ukazuje zreteľne rozdielne 
+% $q_{T}$ pre kaóny a lambdy a pomáha nám ich odlíšiť nielen od seba, ale aj
+% od  pozadia. Kritérium $q_{T}>0.01\: GeV/c$ nám eliminuje
+% značný počet rozpadov $\gamma$ na páry $e^{+}e^{-}$.  
+
+Pre jednoznačné $K^{0}$ požadujeme aby $ -0.45< \alpha <+0.45$ pre
+jednoznačné $\Lambda$ $\alpha >+0.45$ a pre $\overline{\Lambda}$ $\alpha
+<-0.45$. 
+
+\begin{center}
+  \includegraphics*[bb=75 280 460 690]{armenteros.eps}
+\end{center}
+\begin{center}
+  Obrázok 4.3: Armenteros--Podolanski graf.
+\end{center}
+
+Aby $K^{0}$ mali dobrú akceptanciu (o akceptancii pojednám v osobitnej
+kapitole) budeme požadovať, aby priečna hybnosť a rapidita ležali v intervale
+$1<p_{T}<3\: GeV/c$ a $2.5<y_{lab}<3.3$.   Nakoniec, $V^{0}$ vhodné ako
+kandidáti na $K^{0}_{S}$ mezóny sú tie, ktorých invariantná hmotnosť leží v
+intervale $\pm 50\: MeV$ vzhľadom k tabuľkovej  hmotnosti $K^{0}_{S}$ mezónu,
+to znamená $447 < M_{K^{0}_{S}} < 547\: MeV$.
+ 
+\subsection{Typy $V^{0}$}
+Ako už bolo skôr spomenuté, väčšina $V^{0}$ pozadia pochádza 
+z~rekonštrukcie dráh, ktoré majú svoj pôvod v~terčíku, ale vyzerajú pri tom
+ako $V^{0}$ rozpady. Stopy skutočných $V^{0}$ rozpadových dráh sa
+vo všeobecnosti pretínajú dvakrát. Raz vo vrchole a potom opäť v nejakej
+vzdialenosti od vrcholu. Ukazuje sa, že maximálna vzdialenosť medzi týmito
+pretínajúcimi sa bodmi nezávisí od hybnosti $V^{0}$, ale iba od hybnosti
+rozpadajúcich sa častíc v~CMS sústave, $p^{*}$, a od intezity magnetického
+poľa, $B$. Z~toho môžeme usúdiť, že pre daný typ $V^{0}$ v~danom magnetickom
+poli je maximálna vzdialenosť medzi pretínajúcimi bodmi konštantná.
+\begin{center}
+  \includegraphics*[bb=150 480 470 740]{impakt.eps}
+\end{center}
+\begin{center}
+  Obrázok 4.4: Dvakrát sa pretínajúce stopy  $V^{0}$ rozpadových dráh.
+\end{center}
+
+Obr. 4.4 ukazuje stopy rozpadových dráh pretínajúcich vrchol, ktorý môže byť
+v~bode A~alebo v~bode B. Vzdialenosť medzi týmito pretínajúcimi bodmi je
+$L$, kde $L$ je definované ako
+\begin{center}
+  $\sin\theta=\frac{L}{2R}$.
+\end{center}
+$R$ je polomer krivosti dráhy častice v~magnetickom poli B a jej projekcia na
+x-ovú os je $x=L\sin\theta$.
+
+Interakcia medzi nabitými časticami a magnetickým poľom je
+\begin{center}
+  $e(\overline{\upsilon} \times \overline{B}) = \frac{mv^{2}}{R} \Rightarrow
+R=\frac{p}{e|B|\sin\phi},$
+\end{center}
+kde $p$ je hybnosť rozpadového produktu a $\phi$ je uhol medzi vektorom
+magnetickej indukcie a pohybom nabitej častice v~tomto poli. Pre malé
+$\theta$ môžeme písať
+\begin{center}
+  $\sin\theta \simeq \tan\theta = \frac{q_{T}}{q_{L}}$.
+\end{center}
+Maximálna vzdialenosť $L$ medzi priesečníkmi bude, ak $q_{T}$ je vo svojom
+maxime a pretože $q_{T}=p^{*}\cos\theta^{*}$, môžeme písať $q_{Tmax}=p^{*}$.
+Pre rozpad $K^{0}\longrightarrow \pi^{+} \pi^{-}$ je $p^{*}=0.2\: Gev/c$ a
+ak rozpadové produkty majú hybnosť niekoľko Gev/c, tak  $p\gg p^{*}
+\Rightarrow q_{L} \simeq p$. Predchádzajúcu rovnicu môžeme teraz vyjadriť 
+v~tvare 
+\begin{center}
+  $\sin\theta_{max}\simeq\frac{p^{*}}{p}$.
+\end{center}
+Použitím všetkých doterajších vzťahov dostávame vyjadrenie pre maximálnu
+vzdialenosť $L_{max}$ rovnú  
+\begin{center}
+  $L_{max}\simeq2(\frac{p}{Be\sin\phi})\times(\frac{p^{*}}{p}) =
+\frac{2p^{*}}{Be\sin\phi}$
+\end{center}
+a keďže $x=L\sin\phi$, tak dostávame 
+\begin{center}
+  $x=\frac{2p^{*}}{eB}$.
+\end{center}
+$B = 1.8$ Tesla pre experiment WA94  a teda $x_{max}\simeq 75\: cm$  pre
+$K^{0}$.
+
+Ako sme už spomenuli, akceptujeme iba $K^{0}$ kandidátov, ktorí sa
+rozpadajú vo vzdialenosti minimálne  115 cm od terčíka. To znamená, že
+rozpadové dráhy v~tejto oblasti nemôžu byť spätne extrapolované do
+terčíka. 
+
+Dráhy  nabitých rozpadových produktov sa tiež môžu alebo nemusia, v
+závislosti od geometrie rozpadu, opäť prekrížiť v magnetickom poli, ktoré
+tieto dráhy zakrivuje. Dva možné spôsoby rozpadu sú zobrazené na obr. 4.5,
+kde rozpad a) je známy pod menom \uv{sailor} a b) ako \uv{cowboy}.
+
+\begin{center}
+\hspace*{-2.5cm}
+\input{cs.pic}
+\end{center}
+\vspace*{-8cm}
+\begin{center}
+  Obrázok 4.5: Rozpad $V^{0}$ ako a) \uv{sailor} b)\uv{cowboy}.
+\end{center}
+
+Impakt parameter $|\triangle y|$ je definovaný ako vzdialenosť dráhy
+rozpadového produktu od centra terčíka v~rovine x-y. Pre pióny ako rozpadové
+produkty $K^{0}$ mezónu je tento parameter $|\triangle y|>3cm$, ak majú
+pochádzať z~rozpadov $K^{0}$ a nie z~terčíka. 
+
+\subsection{Zhrnutie kritérii na identifikáciu $K^{0}_{S}$}
+\begin{enumerate}
+  \item{Každá rozpadová dráha má najmenej štyri priestorové body,}
+  \item{každá dráha prechádza cez všetkých sedem MWPC,}
+  \item{vrchol $K^{0}$ leží v intervale $-100<x_{\Omega}<71\: cm$,}
+  \item{vzdialenosť najmenšieho priblíženia dvoch opačne nabitých
+dráh  
+        $<1\: cm$,}
+  \item{uhol medzi rekonštruovaným  vektorom hybnosti $K^{0}$ a spojnicou
+stredu terčíka a 
+        rozpadového vrcholu je  $<0.75^{\circ}$,}
+  \item{$ -0.45< \alpha <+0.45$,}  
+  \item{$|\triangle y|>3cm$ pre $\pi^{+}$ a $\pi^{-}$,}
+  \item{invariantná hmotnosť leží v intervale $447 < M_{K^{0}_{S}} < 547\:
+        MeV$,}
+  \item{$1<p_{T}<3\: GeV/c$ a $2.5<y_{lab}<3.3$.}
+\end{enumerate}

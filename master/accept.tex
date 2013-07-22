@@ -1,0 +1,320 @@
+%\documentstyle[graphicx,a4,12pt,emlines,bezier,slovak]{report}
+
+%\begin{document}
+\chapter{Výpočet akceptancie a efektívnosti rekonštrukcie}
+V~predchádzajúcej kapitole bolo ukázané, ako sú rekonštruované podivné častice
+(konkrétne $K^{0}_{S}$ mezóny). Avšak surový počet rekonštruovaných častíc
+nám  sám o~sebe hovorí veľmi málo. Pre štúdium QGP vytvorenej zrážkou
+ultrarelativistických iónov je okrem iného potrebný aj priemerný počet
+každého druhu častíc produkovaných v~interakciách a nie holý počet
+rekonštruovaných častíc. To nám umožní porovnanie produkcie rôzných druhov
+podivných častíc. Napríklad porovnanie výťažkov multipodivných baryónov 
+s~podivnými baryónmi nám poskytne informáciu o~obsahu podivnosti vo
+vzniknutom  fireballe. Túto informáciu môžu teoretici využiť na dedukciu
+najviac pravdepodobného modelu (hadrónový plyn alebo QGP), ktorý najlepšie
+popisuje dané výsledky.
+
+Na počítanie skutočných výťažkov podivných častíc  a tak porovnanie
+relatívnych produkčných výťažkov je potrebné, aby bol počet rekonštruovaných
+častíc korigovaný na:
+\begin{itemize}
+  \item{Geometrickú akceptanciu detektora.}
+  \item{Efektívnosť rekonštrukcie a analyzačného softwaru.}
+\end{itemize}
+Geometrická akceptancia detektora je v~podstate meranie, ako geometria
+experimentálnej aparatúry obmedzuje počet registrovaných častíc. Dráhy
+častíc, ktoré boli v~experimente detegované, vychádzali z~terčíka v~rozmedzí
+úzkeho priestorového uhla, približne 2\% z~celkového  $4\pi$. Ak by detektory
+pokrývali celý priestorový uhol veľkosti $4\pi$, tak potom by nimi prešli
+všetky vzniknuté častice a akceptancia by bola 100\%. Samozrejme, že
+komplexná povaha $K^{0}$ rozpadu v~porovnaní s~dráhami z~terčíka komplikuje
+pochopenie, ako geometria detektora ovplyvňuje rekonštrukciu takýchto
+rozpadov, ale robí to nesmierne dôležitým. Priestorové obrezania (cuts),
+ktoré sme prediskutovali pre rozpady $K^{0}$ mezónov v~tretej kapitole -
+dráhy z~rozpadového produktu musia prejsť cez určený počet komôr,
+alebo že x-ová súradnica vrcholu musí ležať v~určitej oblasti atď.,
+nevyhnutne ovplyvnia akceptanciu.
+
+Pod efektívnosťou rekonštrukcie sa rozumie schopnosť  použitého softwaru
+správne rekonštruovať signál z~detektora. Efektívnosti rekonštrukcie
+sú determinované schopnosťou  rekonštrukčného softwaru  z~hľadiska nájdenia
+dráh a zisťovania rozpadového vrcholu. Do počítania efektívnosti
+rekonštrukcie je tiež zahrnutá  elektronická efektívnosť dôležitých častí
+detektora použitého v~experimente, v~našom prípade mnohovláknové
+proporcionálne komory. Tá samozrejme znižuje počet priestorových bodov 
+vytvorených na jednu dráhu a tak nepriaznivo ovplyvňuje hľadanie dráh a
+v~konečnom dôsledku aj identifikáciu vrcholov.
+
+\section{Akceptancia $K^{0}$ mezónu}
+Na určenie geometrickej akceptancie detektora je generovaný známy počet Monte
+Carlo častíc v~širšej oblasti fázoveho priestoru ako pokrývajú
+jednotlivé komory. Oblasť $y-p_{T}$ sa rozdelí do mriežky a akceptancia
+sa počíta pre každý element mriežky osobitne. Táto mriežka je rozdelená na
+elementy rozmeru $0.1\: GeV/c$ v~$p_{T}$ a $0.05$ v~rapidite. Použitím
+mnohých takýchto štvorcov sme vytvorili oblasť, ktorá bude citlivá na
+postupné zmeny v~akceptancii v~celom študovanom rozmedzí $y-p_{T}$.
+
+Častice sú generované do hornej polovice $(z>0)$ Omega magnetu, keďže
+dolná oblasť nebola v~experimente využitá.  Každá častica sa rozpadá
+izotrópne s~dĺžkou rozpadu danou 
+strednou dobou života $\tau$ $K^{0}$ mezónu. Pravdepodobnosť $P(x_{0})$, že
+častica o~hmotnosti $M$ prejde vzdialenosť $x_{0}$  alebo väčšiu je daná
+vzťahom
+\begin{center}
+  $P(x_{0})=e^{-Mc^{2}x_{0}\Gamma/|p|}$,
+\end{center}
+kde $\Gamma = 1 / c\tau$ a $p$ je hybnosť častice. Dosadením do
+predchádzajúcej rovnice dostávame vzdialenosť rozpadu
+\begin{center}
+  $x_{0}=-\frac{c\tau |p|}{M_{K^{0}}}\ln(R)$,
+\end{center}
+kde $R$ je náhodné číslo generované v~intervale 0 až 1 a $c\tau$ je pre
+$K^{0}$ rovné $2.6762~cm$. Po vypočítaní rozpadovej vzdialenosti sa zistí
+pozícia vrcholu $K^{0}$ a tá musí byť v~intervale $-100<x_{\Omega}<71\: cm$,
+keďže toto je oblasť, v~ktorej ležia rekonštruované $K^{0}$ vrcholy.
+Na vrchol sa tiež kladie už spomínaná podmienka Armenterovského --
+Podolanského $\alpha$, ktoré leží v~intervale $(+0.45<\alpha<-0.45)$.
+ 
+Rozpadové produkty  sa potom nechajú prechádzať cez nasimulované vláknové
+komory. Zisťuje sa počet tých, ktoré prešli cez všetkých sedem komôr  ako
+príslušné reálne dráhy.
+Akceptancia je potom definovaná ako podiel počtu zistených a generovaných
+častíc
+\begin{center}
+  $akceptancia=\frac{pocet.zistenych}{pocet.generovanych} \times \frac{1}{2}
+\times 0.686$.
+\end{center}
+Faktor 1/2  berie do úvahy, že častice boli generované iba do hornej
+polovice magnetu Omega a faktor 0.686 vyjadruje  \uv{branching ratio} 
+$K^{0}_{S} \longrightarrow \pi^{+} \pi^{-}$, t.j. podiel tohto kanálu k
+celkovému počtu možných rozpadov  $K^{0}$ mezónu, ktoré v~experimente nie je
+možné priamo pozorovať. Pre každý bod  $y-p_{T}$ mriežky bolo generovaných 
+1 000 000 $K^{0}$ mezónov. Výslednú závislosť akceptancie od rapidity a
+priečnej hybnosti môžeme vidieť na obr. 5.1.
+
+\begin{center}
+  \includegraphics*[width=14.4cm]{accept.eps}
+\end{center}
+\begin{center}
+ Obrázok 5.1: Akceptancia $K^{0}$ mezónu ako funkcia rapidity a $p_{T}$.
+\end{center}
+
+\newpage
+\section{Efektívnosť rekonštrukcie}
+Cieľom experimentu WA94
+je študovať relatívne výťažky podivných a multipodivných častíc a ich
+antičastíc. Preto okrem počítania akceptancie detektorov je potrebné do
+Monte Carlo prípadov zahrnúť aj fyzikálnu účinnosť detektorov
+ a efektívnosť softwaru, ktorý rekonštruuje dráhy a
+určuje rozpadové vrcholy.  
+
+Za týmto účelom bolo generovaných 20 000 Monte Carlo častíc. Častice
+sú  generované v~terčíku a potom sa nechajú rozpadať tak, že rozdelenie
+rozpadovej dĺžky zodpovedá tomu, čo sa predpokladá pre
+dobu života častice. Rozpadové produkty sa potom  nechajú prejsť cez Omega
+magnetické pole, pritom sa  hľadajú body, v~ktorých pretínajú každú rovinu
+komory. V~každom bode pretnutia sa generuje cluster vláknových zásahov
+(hitov) berúc do úvahy fyzikálnu efektívnosť jednotlivých komôr. Tieto
+generované prípady sa potom zmiešajú s~reálnymi prípadmi z experimentu. Monte
+Carlo hity potom splynú s reálnymi prípadmi. Takéto prípady sú potom
+v~podstate nerozlíšiteľné od prípadov obsahujúcich skutočný rozpad. Takto
+novo vytvorený súbor dát je  potom ďalej spracovaný rovnakými programami, aké
+sa používajú pre reálne dáta.  Pri rozpoznaní Monte Carlo častíc, ktoré sú
+úspešne rekonštrované, potom možno zistiť efektívnosť rekonštrukcie 
+napríklad ako  funkciu multiplicity  častíc v dráhových komorách. 
+Multiplicita MWPC je daná podielom celkového počtu clustrov v každej rovine a
+počtom rovín. Vývojový diagram na obr.~5.2
+sumarizuje proces použitý na výpočet efektívnosti rekonštrukcie.
+
+Efektívnosť rekonštrukcie, ako už bolo spomenuté vyššie, závisí od dvoch
+faktorov - efektívnosti vláknových komôr pri zaznamenávaní dráhy spôsobenej
+prechodom častice cez komory a efektívnosti softwaru pri správnom hľadaní
+dráh a rozpadových vrcholov.
+
+\subsection{Počítanie efektívnosti komôr}
+Na vypočítanie efektívnosti komory je najskôr spustený program TRIDENT na
+vzorke  dát. Pritom študovaná komora je vynechaná z~procesu zostavovania
+dráh, čím sú rekonštruované dráhy úplne nezávislé od tejto komory. Program
+na počítanie efektívnosti komôr, ktorý číta TRIDENT výstup, potom počíta
+zrekonštruované \uv{dobré} dráhy, ktoré prešli cez každú rovinu komory a
+overí sa, či každé vlákno do $2\: mm$ (rozostupenie vlákien) od nárazu
+vzplanie. Ak áno, potom je táto rovina považovaná za úspešne detegujúcu.
+\uv{Dobrá} dráha pre účel počítania efektívnosti komôr je tá, ktorá 
+prechádza cez A1-A7 komory, zanecháva  šesť priestorových bodov - možné
+maximum a smeruje späť do terčíka. Efektívnosť roviny je potom podiel
+počtu  úspešne detegovaných dráh a celkového počtu dráh. Tento postup sa
+opakuje pre  každú zo siedmych komôr.
+
+\newpage
+\vspace*{3cm}
+\hspace*{-0.3cm}
+  \input{diag.pic} 
+\vspace*{2cm}
+\begin{center}
+  Obrázok 5.2: Procesy použité pri výpočte efektívnosti rekonštrukcie.
+\end{center}
+\newpage
+
+Za účelom štúdia efektívnosti komôr je každá rovina rozdelená na štyri
+logické kvadranty, ako vidno na obr. 5.3 a pre každý kvadrant sa počíta
+osbitne. Keďže komora pozostáva z~troch rovín, počíta sa 84 efektívnosti
+(7 komôr $\times$ 3 roviny $\times$ 4 kvadranty). Tie sa potom
+použijú pri implantácii Monte Carlo dát do reálnych prípadov.
+
+\begin{center}
+  \includegraphics*[bb=65 275 530 465,width=14.4cm]{4caskom.eps}
+\end{center}
+\begin{center}
+  Obrázok 5.3: Štyri logické kvadranty MWPC.
+\end{center}
+
+Dalo sa očakávať, že efektívnosť vláknových komôr na okraji butterfly
+oblasti (viď časť 3.2.3) bude klesať. Skúmalo sa, či efektívnosť komôr bude
+k~okraju klesať postupne, alebo či existuje nejaký ostrý skok. Je to
+dôležité vedieť, keďže postupné klesanie efektívnosti by bolo zdrojom
+systematickej chyby.  Ukázalo sa, že efektívnosť postupne klesá k~nule na
+okraji veľkom $\sim$ 1 cm. Tiež sa ukázalo, že počet dráh klesá smerom 
+k~okraju, keďže aj počet vhodných zrekonštruovaných bodov je v~tejto oblasti
+príliš malý. Preto bolo rozhodnuté vylúčiť  okrajový pás veľkosti 1 cm. Tým
+sa zaistilo, že analýza bola vykonávaná v~oblasti rovnomernej efektívnosti.
+
+Efektívnosť komôr použitých v~roku 1991 pri interakciách síra-síra bola
+vypočítaná na vzorke dát. Primerná efektívnosť všetkých siedmych A~komôr  
+ležala v intervale 83\% - 95\% [5].
+% \newpage
+% \begin{center}
+% \hspace*{-1.2cm}
+% \includegraphics*[bb=274 512 510 754,width=7cm]{efekom1.eps}
+% \end{center}
+% \begin{center}
+%   Obrázok 5.4: Efektívnosť roviny U~komory A1.
+% \end{center}
+% \begin{center}
+% \hspace*{-0.7cm}
+% \includegraphics*[bb=106 280 478 645,width=12cm]{efekom2.eps}
+% \end{center}
+% \begin{center}
+%   Obrrazok 5.5: Efektívnosť všetkých siedmich A~komôr.
+% \end{center}
+
+\subsection{Štruktúra \uv{raw} dát}
+Aby Monte Carlo dáta reprodukovali reálne dáta, musí byť zložený event
+vytvorený splynutím generovaných a reálnych, v~presne rovnakom formáte ako
+raw dáta. Preto je dôležité pochopiť štruktúru raw eventu, vstup pre
+TRIDENT. Ako bolo spomenuté na konci tretej kapitoly, raw dáta sú zapísané na
+pásku  v~EPIO (strojovo nezávislom) formáte. Event je napísaný vo forme 16
+bitových slov a každý event má logickú štruktúru (obr. 5.4).
+Začiatočný (header) blok s~NH úvodnými slovami dáva informácie o~evente,
+jeho dĺžku, typ atď. Najdôležitejšie slovo je prvé, ktoré udáva dĺžku
+záznamu. Použitím tohto akoby ukazovateľa je program schopný pozerať na
+koniec záznamu, ktorý je \uv{top} koncom ROMULUS štruktúry. Tento ROMULUS
+blok obsahuje všetky informácie o~vláknových hitoch, veľkosti clusterov atď.,
+ktoré TRIDENT potrebuje na rekonštrukciu dráh v~komorách. 
+\begin{center}
+  \includegraphics*[bb=97 575 505 770]{sctraw.eps}
+\end{center}
+\begin{center}
+  Obrázok 5.4: Štruktúra raw eventu.
+\end{center}
+TRIDENT potom dáva výstupný záznam pozostávajúci z~viacerých blokov, s~prvým
+(header) blokom, ktorý obsahuje informácie o~štruktúre záznamu a je na obr.
+5.5.  Elektronický dátový blok je práve blok ROMULUS, ktorý bol
+vstupom pre TRIDENT. Výsledky rekonštrukcie dráh sú dané v~geometrickom
+bloku.
+
+\subsection{Implantácia Monte Carlo častíc}
+Na implantáciu Monte Carlo dráhy prechádzajúcej cez Omega magnetické pole do
+ROMULUS bloku reálneho eventu, mixovací program najskôr sleduje dráhu cez
+všetkých sedem komôr a hľadá body pretnutia s~každou vláknovou rovinou. Ak
+dráha prechádza medzi dvoma vláknami, obidve vlákna vzplanú práve vtedy, ak
+je vzdialenosť dráhy od vlákna väčšia ako 1/3 z~2 mm rozostupenia, inak
+vzplanie vlákno, ktoré je bližšie k~dráhe.
+
+Aby sa zaistilo, že sa Monte Carlo dráhy správajú ako reálne dráhy, berú
+sa  v~úvahu kvadranty efektívnosti  komôr, ktorými dráhy prechádzajú pred
+tým, ako sa generuje hit. Tým je zabezpečené, že generované častice nie
+sú nevyhnutne dokonale detegované všetkými vláknovými komorami.
+
+Takéto Monte Carlo dáta sú potom zlúčené s~reálnymi dátami do nového ROMULUS
+bloku s~upraveným header blokom, ktorý berie do úvahy vznik ďalších slov. 
+Celý takýto event je potom zapísaný na pásku v~EPIO formáte a môže prejsť cez
+reťazec spracovateľských a analyzačných programov, práve tak, akoby to bol
+reálny event. Posledná úloha je potom overiť, v~koľkých zo spracovaných
+zložených eventov možno nájsť implantované častice.
+\begin{center}
+  \includegraphics*[bb=122 572 470 770]{scttrid.eps}
+\end{center}
+\begin{center}
+  Obrázok 5.5: Štruktúra TRIDENT header bloku.
+\end{center}
+
+
+\subsection{Efektívnosť rekonštrukcie $K^{0}$}
+Ako už bolo spomínané v~kapitole 4, vyžadujeme, aby $K^{0}$ kandidáti ležali
+v~intervale $-100<x_{\Omega}<71$ cm a boli jednoznačné, t.j. aby premenná
+$\alpha$  Podolanského -- Armenterosa bola  $-0.45<\alpha<+0.45$.
+Okrem toho požadujeme, aby $K^{0}$ mali rapiditu a $p_{T}$ v~intervale
+$2.5<y_{lab}<3.3$ a $1<p_{T}<3\: GeV/c$, keďže mimo tejto oblasti
+akceptancia pre $K^{0}$ klesá
+pod $\sim$ 10\% jej maximálnej hodnoty [5].
+
+Avšak Monte Carlo častice musia byť generované v~trocha väčšom
+akceptančnom okne, aby sa brali do úvahy nepresnosti v~meraní hybnosti a
+polohy v~dôsledku konečnej citlivosti detekčného systému. Ak by boli Monte
+Carlo častice generované v rovnakých oblastiach, v akých boli použité
+finálne obmedzenia, niektoré by sa stratili, pretože by sa dostali mimo
+uvažovanú oblasť. Pre tento prípad bolo generovaných 20 000 $K^{0}$  mezónov
+s nasledujúcimi charakteristikami:
+\begin{itemize}
+ \item vrchol leží v intervale $-135<x_{\Omega}<71$ cm,
+ \item rovnomerné rozdelenie rapidity na intervale $2.3<y_{lab}<3.5$,
+ \item $0.8<p_{T}<3.2$ GeV/c,
+ \item distribúcia $m_{T}$
+\begin{center}
+$\frac{dN}{dm_{T}} \sim m_{T}^{\frac{3}{2}}\exp^{-5 m_{T}}$,
+\end{center}
+ \item Monte Carlo rozpady sú izotropné.
+
+\end{itemize}
+Generované prípady potom zmiešame s reálnymi prípadmi. Takýto zmiešaný
+prípad je potom ďalej spracovaný rovnakým reťazcom programov, ako sa
+použil pre reálne dáta, t.j. TRIDENT, STRIPV0 a analyzačný program, ktorý
+aplikuje rovnaké obrezania (cuts) ako pre reálne rozpady
+\begin{itemize}
+  \item vrchol leží v intervale $-100<x_{\Omega}<71$ cm,
+  \item rovnomerné rozdelenie rapidity na intervale $2.5<y_{lab}<3.3$,
+  \item $1<p_{T}<3$ GeV/c,
+  \item hybnosť $K^{0}$ je $>6.5$ GeV/c,
+  \item $-0.45<\alpha<+0.45$.
+\end{itemize}
+Efektívnosť rekonštrukcie je potom daná 
+\begin{center}
+  Efektívnosť=$\frac{N_{rek}}{N_{gen}}$,
+\end{center}
+kde $N_{gen}$ je počet generovaných prípadov, ktoré vyhovujú akceptančným
+podmienkam a $N_{rek}$ je počet úspešne rekonštruovaných prípadov.
+Na obr. 5.6 a 5.7 môžeme vidieť závislosť efektívnosti rekonštrukcie
+$K^{0}_{S}$ od priemerného počtu clustrov v rovine pre magnetické pole hore a
+dole.
+
+\newpage
+\begin{center}
+  \includegraphics*[bb=3 3 560 560,width=8cm]{efeup.eps}
+\end{center}
+\begin{center}
+  Obrázok 5.6: Efektívnosť ako funkcia multiplicity MWPC
+clustrov pre pole hore.
+\end{center}
+
+\begin{center}
+  \includegraphics*[bb=3 3 560 560,width=8cm]{efedo.eps}
+\end{center}
+\begin{center}
+  Obrázok 5.7: Efektívnosť ako funkcia multiplicity MWPC
+clustrov pre pole dole.
+\end{center}
+
+
+
+
+%\end{document}
