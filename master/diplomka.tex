@@ -6,9 +6,23 @@
 \def\softL{L\kern-0.8ex\raise0.1ex\hbox{'}\kern0.1ex}%cstocs
 % endofdefsfromcstocs %
 
-\documentstyle[emlines,graphicx,bezier,12pt,a4,slovak]{report}
-%\usepackage{graphicx}
+%\documentstyle[emlines,graphicx,bezier,12pt,a4,slovak]{report}
 
+\documentclass[a4paper,12pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[slovak]{babel}
+
+\usepackage{tikz,tsemlines}
+\usepackage{graphicx}
+\usepackage{bezier}
+
+\usepackage{times} % PS fonts replace CS-fonts (more beautiful)
+
+\graphicspath{{fig/}}
+
+\textwidth  14.5cm % unsatisfactory, but better than default
+\textheight 22.0cm
 
 \begin{document}
 \oddsidemargin 1cm
