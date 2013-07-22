@@ -6,6 +6,7 @@
 *.blg
 *.dvi
 *.fdb_latexmk
+*.fls
 *.glg
 *.glo
 *.gls
@@ -23,6 +24,7 @@
 *.nlo
 *.out
 *.pdfsync
+*.ps
 *.snm
 *.synctex.gz
 *.toc
