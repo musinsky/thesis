@@ -1,0 +1,52 @@
+\documentclass[14pt,candidate,times,fixint=false]{disser}
+
+\usepackage[a4paper,pdftex,nohead,includefoot,
+left=3.5cm,right=1.8cm,top=2.0cm,bottom=1.7cm,footskip=1.3cm]{geometry}
+\usepackage{ucs}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8x]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage{feynmf}
+\usepackage{colortbl}
+\usepackage{xspace}
+\usepackage{maybemath}
+
+\unitlength=1mm
+\graphicspath{{figures1/}{figures2/}{figures3/}{figures4/}}
+\PrerenderUnicode{ая}
+
+\pdfinfo{
+  /Title (Musinsky Jan - Ph.D. dissertation)
+  /Author (Jan Musinsky)
+  /Subject (Ph.D. dissertation)
+  /Keywords (charge exchange;drift chambers)
+  /CreationDate (D:20090624120000)
+}
+
+\newcommand{\np}{\ensuremath{np \rightarrow pn}\xspace}
+\newcommand{\dpfrag}{\ensuremath{dp \rightarrow ppn}\xspace}
+\newcommand{\dpret}{\ensuremath{dp \rightarrow (pn)p}\xspace}
+\newcommand{\dpchex}{\ensuremath{dp \rightarrow (pp)n}\xspace}
+\newcommand{\dpela}{\ensuremath{dp \rightarrow dp}\xspace}
+\setcounter{tocdepth}{2}
+
+\begin{document}
+\include{disser_title}
+\tableofcontents
+\include{disser_intro}
+\include{chapter1}
+\include{chapter2}
+\include{chapter3}
+\include{chapter4}
+\include{disser_conclusion}
+\small
+\def\BibEmph#1{\emph{#1}}
+\bibliography{references}
+\bibliographystyle{gost705}
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% coding: utf-8
+%%% End:

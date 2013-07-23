@@ -1,0 +1,148 @@
+% mf '\mode:=localfont; input ppn_fmf'
+\begin{figure}[!h]
+  \begin{center}
+    \begin{fmffile}{ppn_fmf}
+      \vspace{15mm}
+      \hspace{-10mm}
+      % pp1, delta+
+      \parbox{0.45\textwidth} {
+        \begin{fmfgraph*}(70,35)
+          \fmfset{arrow_len}{5mm}\fmfset{arrow_ang}{10}
+          \fmfleft{iA,iB}
+          \fmfright{o1,o2,o3}
+          \fmflabel{$d$}{iA}
+          \fmflabel{$p$}{iB}
+          \fmflabel{$p$}{o3}
+          \fmflabel{$n$}{o2}
+          \fmflabel{$p$}{o1}
+
+          \fmf{fermion,tension=1.0}{iA,v1} % default tension=1.0
+          \fmf{fermion,tension=1.0}{v2,o1}
+          \fmf{fermion,tension=1.0}{v2,o2}
+          \fmf{fermion,tension=1.0}{iB,v3,o3}
+
+          \fmf{fermion,tension=1.5,label=$n$}{v1,v2}
+          \fmf{fermion,tension=0.2,lab.side=left,label=$p$}{v1,v3}
+          \fmf{fermion,tension=0.1,lab.side=left,label=$\Delta^{+}$}{v3,v2}
+
+          \fmfblob{0.06w}{v1}
+          \fmfdot{v2,v3}
+          \fmf{dbl_plain_arrow}{iA,v1}
+          \fmffreeze
+          \fmf{plain_arrow,width=2.5*thin}{v3,v2}
+        \end{fmfgraph*}
+      }
+      % pp2, delta++
+      \qquad
+      \parbox{0.45\textwidth} {
+        \begin{fmfgraph*}(70,35)
+          \fmfset{arrow_len}{5mm}\fmfset{arrow_ang}{10}
+          \fmfleft{iA,iB}
+          \fmfright{o1,o2,o3}
+          \fmflabel{$d$}{iA}
+          \fmflabel{$p$}{iB}
+          \fmflabel{$n$}{o3}
+          \fmflabel{$p$}{o2}
+          \fmflabel{$p$}{o1}
+
+          \fmf{fermion,tension=1.0}{iA,v1} % default tension=1.0
+          \fmf{fermion,tension=1.0}{v2,o1}
+          \fmf{fermion,tension=1.0}{v2,o2}
+          \fmf{fermion,tension=1.0}{iB,v3,o3}
+
+          \fmf{fermion,tension=1.5,label=$n$}{v1,v2}
+          \fmf{fermion,tension=0.2,lab.side=left,label=$p$}{v1,v3}
+          \fmf{fermion,tension=0.1,lab.side=left,label=$\Delta^{++}$}{v3,v2}
+
+          \fmfblob{0.06w}{v1}
+          \fmfdot{v2,v3}
+          \fmf{dbl_plain_arrow}{iA,v1}
+          \fmffreeze
+          \fmf{plain_arrow,width=2.5*thin}{v3,v2}
+        \end{fmfgraph*}
+      }
+      \begin{center}
+        \vspace{5mm}
+        а) \hspace{75mm} б)
+      \end{center}
+      % np1, delta+
+      \vspace{15mm}
+      \hspace{-10mm}
+      \parbox{0.45\textwidth} {
+        \begin{fmfgraph*}(70,35)
+          \fmfset{arrow_len}{5mm}\fmfset{arrow_ang}{10}
+          \fmfleft{iA,iB}
+          \fmfright{o1,o2,o3}
+          \fmflabel{$d$}{iA}
+          \fmflabel{$p$}{iB}
+          \fmflabel{$n$}{o3}
+          \fmflabel{$p$}{o2}
+          \fmflabel{$p$}{o1}
+
+          \fmf{fermion,tension=1.0}{iA,v1} % default tension=1.0
+          \fmf{fermion,tension=1.0}{v2,o1}
+          \fmf{fermion,tension=1.0}{v2,o2}
+          \fmf{fermion,tension=1.0}{iB,v3,o3}
+
+          \fmf{fermion,tension=1.5,label=$p$}{v1,v2}
+          \fmf{fermion,tension=0.2,lab.side=left,label=$n$}{v1,v3}
+          \fmf{fermion,tension=0.1,lab.side=left,label=$\Delta^{+}$}{v3,v2}
+
+          \fmfblob{0.06w}{v1}
+          \fmfdot{v2,v3}
+          \fmf{dbl_plain_arrow}{iA,v1}
+          \fmffreeze
+          \fmf{plain_arrow,width=2.5*thin}{v3,v2}
+        \end{fmfgraph*}
+      }
+      % np2, delta0
+      \qquad
+      \parbox{0.45\textwidth} {
+        \begin{fmfgraph*}(70,35)
+          \fmfset{arrow_len}{5mm}\fmfset{arrow_ang}{10}
+          \fmfleft{iA,iB}
+          \fmfright{o1,o2,o3}
+          \fmflabel{$d$}{iA}
+          \fmflabel{$p$}{iB}
+          \fmflabel{$p$}{o3}
+          \fmflabel{$n$}{o2}
+          \fmflabel{$p$}{o1}
+
+          \fmf{fermion,tension=1.0}{iA,v1} % default tension=1.0
+          \fmf{fermion,tension=1.0}{v2,o1}
+          \fmf{fermion,tension=1.0}{v2,o2}
+          \fmf{fermion,tension=1.0}{iB,v3,o3}
+
+          \fmf{fermion,tension=1.5,label=$p$}{v1,v2}
+          \fmf{fermion,tension=0.2,lab.side=left,label=$n$}{v1,v3}
+          \fmf{fermion,tension=0.1,lab.side=left,label=$\Delta^{\circ}$}{v3,v2}
+
+          \fmfblob{0.06w}{v1}
+          \fmfdot{v2,v3}
+          \fmf{dbl_plain_arrow}{iA,v1}
+          \fmffreeze
+          \fmf{plain_arrow,width=2.5*thin}{v3,v2}
+        \end{fmfgraph*}
+      }
+      \begin{center}
+        \vspace{5mm}
+        в) \hspace{75mm} г)
+      \end{center}
+    \end{fmffile}
+
+    \caption{Диаграммы Фейнмана для реакции безмезонного развала дейтрона на
+      протоне \dpfrag с образованием промежуточной $\Delta$-изобары. Диаграммы
+      а) и б) соответствуют событиям с участием $\Delta^{+}$ и
+      $\Delta^{++}$-изобары в квази-$pp$ столкновениях. События с обменом заряда
+      изображены на диаграммах б) и в).}
+    \label{fig:feynman}
+  \end{center}
+\end{figure}
+
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "../musinsky_disser"
+%%% coding: utf-8
+%%% End:
