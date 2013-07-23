@@ -1,0 +1,164 @@
+% -*- mode: LaTeX; coding: utf-8; -*-
+
+\documentclass[a4paper,12pt,titlepage]{article}
+
+\usepackage{cmap}                   % правильный PDF (на первом месте)
+\usepackage{ucs}                    % unicode
+\usepackage[utf8x]{inputenc}
+\usepackage{mathtext}               % перед загрузкой пакета babel
+\usepackage[russian]{babel}
+\usepackage{pscyr}                  % pretty cyrillic fonts
+\usepackage{ifpdf}
+\ifpdf
+\usepackage[pdftex]{graphicx}       % pdf
+\else
+\usepackage{graphicx}               % dvips
+\fi
+\usepackage{indentfirst}            % правильный отступ
+\usepackage{fancyhdr}               % нестандартные колонтитулы
+\usepackage{floatflt}               % обтекание рисунков
+\usepackage{lscape}                 % landscape (для таблицы)
+
+\graphicspath{{pictures/}}
+
+%\renewcommand{\rmdefault}{ftm}
+
+\ifpdf
+\pdfinfo{
+  /Author (Jan Musinsky)
+  /Title (Detectors)
+  /CreationDate (may 2007)
+  /Subject (Detectors)
+%  /Keywords (Детекторы;Взаимодействие частиц с веществом)
+}
+\fi
+
+\begin{document}
+\title{\textcp{Газовые координатно-трековые детекторы}}
+\author{\\ \LARGE{Ян Мушински} \\ \\
+  ЛВЭ ОИЯИ Дубна \\ \\ \\}
+% , Россия\\(университет и. Шафарика Кошице, Словакия
+\date{\emph{май 2007 года}}
+\maketitle
+
+\thispagestyle{plain}
+\setcounter{page}{2}
+\tableofcontents
+
+\clearpage
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\renewcommand{\sectionmark}[1]{%
+  \markboth{#1}{}}
+\fancyhead[R]{\slshape \leftmark}  % higher-level
+%\fancyhead[R]{\slshape \rightmark} % lower-level
+\fancyfoot[C]{\thepage}
+
+\input{part1.tex}
+
+\setcounter{footnote}{0}
+\input{part2.tex}
+
+\clearpage
+\pagestyle{plain}
+\begin{thebibliography}{99}
+  % \bibitem{pom:84}
+  %   \emph{Померанчук И. //} Название журнала. - Год выпуска. - Номер
+  %   выпуска. - Местоположение статьи (страницы).
+
+\bibitem{pdg}
+  \emph{W. Yao et al. //} Journal of Physics G 33, 2006, \\
+  available on the pages http://pdg.lbl.gov
+
+\bibitem{cer:04}
+  \emph{А. Черняев //} Взаимодействие ионизирующего излучения с веществом,
+  2004, Физматлит
+
+\bibitem{kor:06}
+  \emph{A. Korytov //} Interactions of particles with matter, 2006, \\
+  http://www.phys.ufl.edu/\textasciitilde korytov/phz5354/
+  note\_C09\_interaction\_of\_particles\_with\_matter.pdf
+
+\bibitem{sta}
+  \emph{S. Stapnes //} Instrumentation for high-energy physics, \\
+  http://www.fys.uio.no/\textasciitilde stapnes/pylos-I.doc
+
+\bibitem{den:04}
+  \emph{П. Денисов //} Детекторы черенковского излучения, 2004, Природа
+
+\bibitem{mas:06}
+  \emph{F. Maas //} Interaction of Particles with Matter and Main Types
+  of Detectors, 2006, \\
+  http://www.fantom.kvi.nl/edact.html
+
+\bibitem{kal:66}
+  \emph{В. Калашникова //} Детекторы элементарных частиц, 1966, Наука
+
+\bibitem{shut:66}
+  \emph{R. Shutt //} High enrgy physics with the Brokhaven 80'' hydrogen buble
+  chamber, 1996, \\  http://www.bnl.gov/bnlweb/PDF/bnl\_9065.pdf
+
+\bibitem{har}
+  \emph{G. Harigel //} Bubble chambers, technology and impact on high enrgy
+  physics, \\ http://dbserv.ihep.su/~pubs/aconf00/tconf00/ps/c6-4.pdf
+
+\bibitem{gla}
+  \emph{В. Глаголев //} 100-см водородная пузырьковая камера, k 50-летию ЛВЭ
+
+\bibitem{duk:04}
+  \emph{C. Dukes //} Spark Chambers for the Finesse Rangestack, 2004,
+  \\ http://galileo.phys.virginia.edu/research/groups/hep/aag/memos/
+  spark\_chamber.pdf
+
+\bibitem{nak:06}
+  \emph{T. Nakamura et al. //} Nucl. Instr. and Meth. A, 2006, Vol. 556,
+  p.~80-86
+
+\bibitem{kla:90}
+  \emph{К. Клайнкнехт //} Детекторы корпускулярных излучений, 1990, Мир
+
+\bibitem{rop:04}
+  \emph{L. Ropelewski et al. //} CERN Academic Training Programme 2004/2005,
+  Lecture 2a - Gas Detectors, \\
+  http://ph-dep-dt2.web.cern.ch/ph-dep-dt2/CAT2005\_2a.pdf
+
+\bibitem{sau:02}
+  \emph{F. Sauli //} Gas-filled detectors, Short Courses-2002-1,\\
+  http://fabio.home.cern.ch/fabio/seminars.res/ieee02\_sc\_sauli1.pdf
+    
+\bibitem{leo:94}
+  \emph{W. Leo //} Techniques for nuclear and particle physics experiments,
+  1994, Springer-Verlag
+
+\bibitem{gar}
+  \emph{R. Veenhof //} Garfield - simulation of gaseous detectors,
+  CERN Program Library W5050, \\ http://garfield.web.cern.ch/garfield
+
+\bibitem{pes:86}
+  \emph{В. Пешехонов //} Физ. элем. частиц и атом. ядра, 1986, Т. 17,
+  \No 5, с.~1030-1078
+
+\bibitem{gru:99}
+  \emph{К. Групен //} Детекторы элементарных частиц, 1999, Сибирский
+  хронограф
+
+\bibitem{zan:78}
+  \emph{Ю. Заневский //} Проволочные детекторы элементарных частиц,
+  1978, Атомиздат
+
+\bibitem{char:93}
+  \emph{Ж. Шарпак //} Успехи физических наук, 1993, T. 163, \No 10, \\
+  с.~57-66
+
+\bibitem{sau:77}
+  \emph{F. Sauli //} CERN Academic Training Programme 1975/1976,
+  Principles of operation of multiwire proportional and drift chambers
+\end{thebibliography}
+
+\end{document}
+
+
+
+%%% Local Variables:
+%%% TeX-master: t
+%%% End:
