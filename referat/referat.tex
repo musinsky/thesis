@@ -4,7 +4,7 @@
 
 \usepackage{cmap}                   % правильный PDF (на первом месте)
 \usepackage{ucs}                    % unicode
-\usepackage[utf8x]{inputenc}
+\usepackage[utf8]{inputenc}
 \usepackage{mathtext}               % перед загрузкой пакета babel
 \usepackage[russian]{babel}
 \usepackage{pscyr}                  % pretty cyrillic fonts
@@ -19,6 +19,7 @@
 \usepackage{floatflt}               % обтекание рисунков
 \usepackage{lscape}                 % landscape (для таблицы)
 
+\providecommand{\No}{\textnumero}   % fix obsolete \No
 \graphicspath{{pictures/}}
 
 %\renewcommand{\rmdefault}{ftm}
@@ -29,7 +30,7 @@
   /Title (Detectors)
   /CreationDate (may 2007)
   /Subject (Detectors)
-%  /Keywords (Детекторы;Взаимодействие частиц с веществом)
+  %  /Keywords (Детекторы;Взаимодействие частиц с веществом)
 }
 \fi
 
@@ -125,7 +126,7 @@
 \bibitem{sau:02}
   \emph{F. Sauli //} Gas-filled detectors, Short Courses-2002-1,\\
   http://fabio.home.cern.ch/fabio/seminars.res/ieee02\_sc\_sauli1.pdf
-    
+
 \bibitem{leo:94}
   \emph{W. Leo //} Techniques for nuclear and particle physics experiments,
   1994, Springer-Verlag
