@@ -1,0 +1,43 @@
+\documentclass[10pt,autoref]{disser}
+
+\usepackage[a4paper,pdftex,nohead,includefoot,
+width=12.0cm,height=18.5cm,footskip=1.25cm]{geometry}
+\usepackage{ucs}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8x]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage{xspace}
+\usepackage{tabularx}
+
+\parindent=2em
+\unitlength=1mm
+\graphicspath{{figures/}}
+\PrerenderUnicode{ая}
+
+\pdfinfo{
+  /Title (Musinsky Jan - Abstract of Ph.D. dissertation)
+  /Author (Jan Musinsky)
+  /Subject (Abstarct of Ph.D. dissertation)
+  /Keywords (charge exchange;drift chambers)
+  /CreationDate (D:20100309120000)
+}
+
+\renewcommand\baselinestretch{1.25}
+
+\newcommand{\np}{\ensuremath{np \rightarrow pn}\xspace}
+\newcommand{\dpfrag}{\ensuremath{dp \rightarrow ppn}\xspace}
+\newcommand{\dpret}{\ensuremath{dp \rightarrow (pn)p}\xspace}
+\newcommand{\dpchex}{\ensuremath{dp \rightarrow (pp)n}\xspace}
+\newcommand{\dpela}{\ensuremath{dp \rightarrow dp}\xspace}
+
+\begin{document}
+\input{abstract_title}
+\input{abstract_general}
+\input{abstract_outline}
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% coding: utf-8
+%%% End:
