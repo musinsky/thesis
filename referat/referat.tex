@@ -2,11 +2,12 @@
 
 \documentclass[a4paper,12pt,titlepage]{article}
 
-\usepackage{cmap}                   % правильный PDF (на первом месте)
-\usepackage{ucs}                    % unicode
-\usepackage[utf8x]{inputenc}
-\usepackage{mathtext}               % перед загрузкой пакета babel
+\usepackage{mathtext}               % перед загрузкой пакета fontenc
+
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}         % после загрузки пакета fontenc
 \usepackage[russian]{babel}
+
 \usepackage{pscyr}                  % pretty cyrillic fonts
 \usepackage{ifpdf}
 \ifpdf
