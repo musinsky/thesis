@@ -1,4 +1,11 @@
 * Packages needed for TeX Live
+ * PSCyr
+ * packages from CTAN
+ ```
+ tlmgr install babel-russian hyphen-russian cyrillic t2 lh
+ tlmgr install wrapfig maybemath feynmf feynmp-auto metapost
+ tlmgr install textcase times txfonts   # for disser + PSCyr
+ ```
  * [disser-1.1.4](http://sourceforge.net/projects/disser/) (version from the end of 2009)
  ```
  export DESTDIR=`kpsewhich -expand-var='$TEXMFHOME'`    # user
@@ -11,11 +18,4 @@
  
  mktexlsr $DESTDIR   # user
  mktexlsr            # admin
- ```
- * PSCyr
- * packages from CTAN
- ```
- tlmgr install babel-russian hyphen-russian cyrillic t2 lh
- tlmgr install wrapfig maybemath feynmf feynmp-auto metapost
- tlmgr install textcase times txfonts   # for disser + PSCyr
  ```
