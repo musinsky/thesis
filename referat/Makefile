@@ -16,7 +16,8 @@ pdf:	$(NAME).tex
 
 distsrc:
 	@rm -f $(DISTSRCNAME);
-	@tar --ignore-failed-read -czvf $(DISTSRCNAME) $(ALLFILES) Makefile;
+	@tar --ignore-failed-read -czvf $(DISTSRCNAME) $(ALLFILES) \
+	  Makefile README.md;
 	@echo -e "\n$(DISTSRCNAME) done\n"
 
 clean:
