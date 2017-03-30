@@ -14,7 +14,7 @@ DISTSRCNAME	= $(NAME)_$(shell date +%F).tar.gz
 all:	pdf
 
 pdf:	$(NAME).tex
-	latexmk -pdf $(NAME)
+	latexmk -shell-escape -pdf $(NAME)
 
 distsrc:
 	@rm -f $(DISTSRCNAME);
