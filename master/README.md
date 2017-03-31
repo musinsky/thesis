@@ -1,5 +1,4 @@
-* Packages needed for TeX Live
- * packages from CTAN
- ```
- tlmgr install babel-slovak hyphen-slovak ec tsemlines
- ```
+* packages needed from from CTAN
+```
+tlmgr install babel-slovak hyphen-slovak ec tsemlines
+```
