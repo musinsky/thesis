@@ -4,8 +4,9 @@ tlmgr install babel-russian hyphen-russian cyrillic t2 lh
 tlmgr install wrapfig maybemath feynmf feynmp-auto metapost
 tlmgr install textcase times txfonts   # for disser + PSCyr
 ```
-* disser-1.1.4  
-needed [disser](https://sourceforge.net/projects/disser/) version 1.1.4 (from the end of 2009 year), don't install disser from CTAN  
+* [PSCyr](https://github.com/musinsky/config/tree/master/TeXLive/PSCyr)
+* disser-1.1.4
+needed [disser](https://sourceforge.net/projects/disser/) version 1.1.4 (from the end of 2009 year), don't install disser from CTAN
 exported shell variable must be `DESTDIR`
 ```
 export DESTDIR=`kpsewhich -expand-var='$TEXMFLOCAL'`   # as admin
@@ -20,4 +21,3 @@ make install
 mktexlsr            # as admin
 mktexlsr $DESTDIR   # or as user
 ```
-* [PSCyr](https://github.com/musinsky/config/tree/master/TeXLive/PSCyr)
