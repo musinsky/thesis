@@ -1,4 +1,4 @@
-# 2013-07-22
+# 2020-05-03
 
 NAME		= diplomka
 
@@ -16,7 +16,7 @@ ps:	$(NAME).tex
 	latexmk -ps $(NAME)
 
 pdf:	$(NAME).tex
-	latexmk -pdfdvi $(NAME)
+	latexmk -pdfps $(NAME)
 
 distsrc:
 	@rm -f $(DISTSRCNAME);
