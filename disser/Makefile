@@ -1,4 +1,4 @@
-# 2013-07-23
+# 2020-05-03
 
 NAME		= musinsky_disser
 
@@ -19,7 +19,7 @@ pdf:	$(NAME).tex
 distsrc:
 	@rm -f $(DISTSRCNAME);
 	@tar --ignore-failed-read -czvf $(DISTSRCNAME) $(ALLFILES) \
-	  Makefile README.md;
+	  Makefile README.md disser-1.1.4.zip;
 	@echo -e "\n$(DISTSRCNAME) done\n"
 
 clean:
